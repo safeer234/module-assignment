@@ -1,0 +1,247 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Home{
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.start-button{
+  text-decoration: none;
+  border: 3px solid red;
+margin-right: 20px;
+ color: white;
+  padding: 8px;
+  border-radius: 20px;
+}
+.start-button:hover{
+  background-color: red;
+  transition: 0.5s;
+ 
+  
+}
+.download-button{
+  text-decoration: none;
+  
+  border: 3px solid yellow;
+ color: white;
+  padding: 7px;
+  border-radius: 20px;
+}
+.download-button:hover{
+  
+background-color: rgb(187, 246, 11);
+color: black;
+transition: 0.5s;
+}
+
+.about-img{
+    width: 400px;
+    margin-top:20px;
+}
+
+.section-title{
+    text-align: center;
+    font-weight: 500;
+    font-size: x-large;
+
+}
+.section-title h1{
+    font-weight: 900;
+}
+.about-web{
+    margin-top: 70px;
+}
+.about-web p{
+    font-size: larger;
+    font-weight: 500;
+}
+.about-web li{
+    font-weight: 600;
+}
+
+
+.section-title .line{
+   width: 60px;
+   height: 4px;
+   background-color: #666666;
+   margin: 16px auto 24px auto;
+
+    }
+    
+    .project-img1{
+        width: 400px;
+        outline: 6px solid white;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .scroll-section1{
+        height: 80px;
+    }
+    .first-project h1{
+        margin-top: 100px;
+    }
+    .first-project p{
+         font-size: larger;
+    font-weight: 500;
+    margin-top: 20px;
+
+    }
+    .know-button{
+      text-decoration: none;
+      font-size: large;
+      font-weight: 600;
+
+      width: 80px;
+      height: 40px;
+      padding: 60px;
+margin-right: 20px;
+ color: rgb(16, 15, 15);
+ background-color: rgb(227, 227, 14);
+ border: 0px solid rgb(227, 227, 14);
+  padding: 8px;
+  border-radius: 18px;
+      
+    }
+    
+    .know-button:hover {background-color: #dfe6ab;
+      color: rgb(41, 38, 38);
+      transition: 0.5s;
+    }
+    
+
+
+    .second-project h1{
+        margin-top: 100px;
+    }
+    .second-project p{
+         font-size: larger;
+    font-weight: 500;
+    margin-top: 20px;
+
+    }
+    .project-img2{
+        width: 400px;
+        height: 200px;
+        outline: 6px solid white;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .scroll-section2{
+        height: 50px;
+    }
+    .row{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contact-form{
+        margin-top: 50px;
+        padding: 40px;
+        border: 2px solid #301934;
+        background-color: #301934;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-me .line{
+         width: 60px;
+   height: 4px;
+   background-color: #666666;
+   margin: 16px auto 24px auto;
+    }
+    .row .contact-form .submit-button{
+        border-radius: 15px;
+        font-weight: 700;
+        border: 0px solid #666666;
+        padding: 7px;
+        height: 40px;
+        width: 90px;
+        background-color: #666666;
+        color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 4px #3d3c3c;
+    }
+    
+    .contact-form .submit-button:hover {background-color: #747a74}
+    .contact-form .submit-button:active{
+        transform: translateY(4px);
+        box-shadow: 0 2px #3d3c3c;
+    }
+    .scroll-section3{
+        height: 210px;
+    }
+    
+    .bg-dark{
+        padding: 50px;
+        text-align: center;
+    }    
+    
+    /* Media Queries */
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .about-img,
+  .project-img1,
+  .project-img2 {
+    width: 100%;
+    margin-left: 0;
+  }
+  .about-web p,
+  .first-project p,
+  .second-project p {
+    font-size: 1rem;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .contact-form {
+    padding: 20px;
+  }
+}
+
+/* Tablet (min-width: 769px) and (max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-img,
+  .project-img1,
+  .project-img2 {
+    width: 80%;
+    margin-left: 0;
+    font-size: 3px;
+    text-align: justify;
+  }
+  .about-web p,
+  .first-project p,
+  .second-project p {
+    font-size: 1.1rem;
+  }
+  .contact-form {
+    padding: 30px;
+  }
+}
+
+/* Large screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .about-img {
+    width: 400px;
+  }
+  .project-img1 {
+    width: 400px;
+    margin-left: 100px;
+  }
+  .project-img2 {
+    width: 400px;
+    height: 200px;
+    margin-left: 100px;
+  }
+}
